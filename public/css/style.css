@@ -136,6 +136,10 @@ main {
     left: 33%;
     top: 38%;
 }
+.left .obj2:hover {
+    transform: rotate(40deg);
+    transition: 0.8s;
+}
 .left .obj3 {
     width: 443px;
     left: 35%;
@@ -355,6 +359,11 @@ footer .dropdown ul li {
 .footer-btm p {
     padding-left: 60px;
     font-weight: 300;
+    font-size: 14px;
+}
+
+.left-left {
+    position: fixed;
 }
 /* 애니메이션 효과 */
 @keyframes opacityTop {
@@ -372,6 +381,8 @@ footer .dropdown ul li {
 /* 레이어 팝업 */
 .layerPopup {
     background-color: rgba(0, 0, 0, 0.45);
+    /* backdrop-filter: blur(7px); */
+    -webkit-backdrop-filter:blur(7px);
     backdrop-filter: blur(7px);
     width: 0;
     height: 100vh;
@@ -700,6 +711,9 @@ footer .dropdown ul li {
     .swiper-button-prev img {
         left: 50px;
     }
+    .left-left {
+        position: unset;
+    }
 }
 
 @media (max-width:1024px) {
@@ -898,6 +912,9 @@ footer .dropdown ul li {
         right: 20px;
         font-size: 10px;
         padding: 6px 15px;
+    }
+    .footer-btm {
+        padding: 10px 0;
     }
     .f-left img {
         width: 98px;
