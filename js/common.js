@@ -35,6 +35,7 @@ function openPopup(obj) {
     document.querySelector('.layerPopup').style.width = '100%';
     const idx = obj.getAttribute('data-key')
     swiper.slideTo(idx, 0, false) 
+    console.log(idx)
 
 	for (let container of popupContainer) {
 		container.style.opacity = '1';
